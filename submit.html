@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="Header">
+        <div id="targetDiv">
+            GLY COMPANY 
+        </div>
+        <div class="conpany">
+            <img src="./conpany.png" alt="">
+        </div>
+    </div>
+    
+    <div class="Body">
+        <div class="body2">
+            <div class="bodytitle">We have registered information for you.  Thank you for your cooperation.</div>
+            <button id="sub1" onclick="j()">back</button>
+        </div>
+</div>
+    <div class="Footer">
+        Email me if you have problem:<br>
+        <a href="https://Outlook.com/">B1901220@helplive.edu.my</a>&nbsp;&nbsp;
+        <a href="https://mail.qq.com/">1687766385@qq.com</a>&nbsp;&nbsp;
+        <a href="https://gmail.com/">hengyi322@gmail.com</a><br>
+        <span>copyeright&copy;HELP university</span>
+    </div>
+
+
+    <script>
+       function j(){
+           window.history.go(-1)
+       }
+       var time = setTimeout(() => {
+       document.querySelector('#targetDiv').className = 'move';
+          }, 1000);
+    </script>
+</body>
+</html>

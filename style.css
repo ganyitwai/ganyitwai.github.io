@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(172, 168, 168);
+    padding: 0 10%;
+}
+.Header{
+    background-color: #146CA6;
+    background-image:url('a.jpg');
+    color: #FFFFFF;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.Navigation{
+    background-color: #E2FF32;
+    color: #154322;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+.Navigation ul{
+    display: flex;
+    list-style:none;
+    text-align: center;
+    font-size: 18px;
+}
+.Navigation ul li{
+    flex: 1;
+}
+.Body{
+    background-color: #E2FF32;
+    color: #154322;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction:row;
+    position: relative;
+}
+.Footer{
+    background-color: #E2FF32;
+    color: #154322;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    text-align: center;
+}
+.bodytitle1{
+    width: 100%;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+    font-size: 10px;
+    margin: 20px 0;
+}
+.active{
+    background: white;
+    }
+#targetDiv{
+    position: absolute;
+    -webkit-transition: all .5s ease-in;
+-moz-transition: all .5s ease-in;
+transition: all .5s ease-in;
+opacity: 0;
+}
+
+#targetDiv.move{
+    top: 10px;           
+    left: 30px;
+    opacity: 1;
+}
+.conpany{
+    float: right;
+}
+.box1{
+    flex:1;
+    background-color: #fff;
+    
+}
+#sub{
+    position: absolute;
+    bottom: 30px;
+    left: 400px;
+}
+#sub1{
+    margin:60px 550px;
+}
+.box2{
+    width: 40%;
+    background-color: red;
+}
+.body1{
+    background-color: #fff;
+    width: 1499.22px;
+}
+.body2{
+    background-color: #fff;
+    width: 1499.22px;
+    height: 200px;
+}
+.box3{
+    margin: 10px 300px;
+}
+.box4{
+    margin: 10px 400px;
+}
+.bodytitle{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0;
+}
+table {margin: auto;
+border-style:solid;
+border-color:#3399cc;
+border-width:1px;
+width: 90%;
+border-collapse: collapse;}
+
+
+.boximg img{
+    width: 400px;
+    height: 200px;
+    margin: 5px 32px; 
+}
+
+td,th {padding: 5px;
+border-color: #3399cc;
+border-width: 1px;
+border-style: solid;}
+
+td {text-align: center;}
+
+.text {text-align: left;}
+
+tr:nth-of-type(even) {background-color: #F5FAFC;}
+
+.tab1{
+    margin-top: 5px;
+}
+
+.bodytitle2{
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 70px;
+}
+
+.zi{font-weight: bolder;}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLY Company</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="Header">
+        <div id="targetDiv">
+            GLY COMPANY 
+        </div>
+        <div class="conpany">
+            <img src="./conpany.png" alt="">
+        </div>
+    </div>
+    <div class="Navigation">   
+        <ul>
+            <li class="nali active" ><span class="xinxin">★</span> About</li>
+            <li class="nali"><span class="xinxin">☆</span> Place</li>
+            <li class="nali"><span class="xinxin">☆</span> Booking</li>
+            <li class="nali"><span class="xinxin">☆</span> Price</li>
+            <li class="nali"><span class="xinxin">☆</span> Food</li>
+            <li class="nali"><span class="xinxin">☆</span> Flight Info</li>
+            <li class="nali"><span class="xinxin">☆</span> Hotel Info</li>
+            <li class="nali"><span class="xinxin">☆</span> FAQ</li>
+            <li class="nali"><span class="xinxin">☆</span> Weather</li>
+            <li class="nali"><span class="xinxin">☆</span> Currency Rate</li>
+        </ul>
+    </div>
+    
+    <div class="Body">
+        <div class="box1">
+            <br><br>
+    <span class="zi">Company history:</span><br>
+    GYL is a combined Chinese and Malaysian tourism industry company, founded on June 2, 
+    2021, with headquarter in Kuala Lumpur, Malaysia and branch offices in Beijing, 
+    China. The business includes: booking tickets for scenic spots, booking hotels, and planning trips.<br><br>
+    Our company's trademark is:
+    <div> <img src="./conpany.png" alt=""></div><br><br>
+    <span class="zi">Malaysia background:</span><br>
+    Malaysia has a tropical rainforest climate and is located near the equator, so it is hot throughout the year. It is surrounded mostly by sea and contains many islands, some of which are Betruit Island, Langkawi, and Penang Island. Half of Malaysia is covered in trees, hence the climate. Some of these forests have become preserved and turned into parks for visitors. 
+    <br><br>
+    <span class="zi">China background:</span><br>
+    China has tropical monsoon climate zone, subtropical monsoon climate zone, temperate monsoon climate zone.
+    Chinese culture has a long history, extensive and profound, and is colorful. As the cultural supremative country of the East Asian cultural circle, Chinese culture occupies an important position in the world cultural system. Due to the differences in geographical location and natural conditions, Chinese culture and economy also have their own characteristics.
+    <br><br>
+    <br><br>
+    <span class="zi">Why choice GLY company?</span><br>
+    * You can better understand the tourism information and food information of China and Malaysia.<br>
+    * You can register your information on the spot.<br>
+    * You can find the exchange rate between Malaysia and China, or other countries.<br>
+    * You can get the answers to your questions on our website.<br>
+    * GLY is a company you can trust.<br>
+    <br><br>
+   </div>
+   <div class="box2">
+    <div class='boximg'>
+     <img src="conpany.png" alt="">
+     <img src="china.jpg" alt="">
+     <img src="malaysia.jpg" alt="">
+     <img src="wenhao.jpg" alt="">
+    </div>
+ </div>
+</div>
+    <div class="Footer">
+        Email me if you have problem:<br>
+        <a href="https://Outlook.com/">B1901220@helplive.edu.my</a>&nbsp;&nbsp;
+        <a href="https://mail.qq.com/">1687766385@qq.com</a>&nbsp;&nbsp;
+        <a href="https://gmail.com/">hengyi322@gmail.com</a><br>
+        <span>copyeright&copy;HELP university</span>
+    </div>
+
+
+    <script>
+       function j(){
+           window.location.href = "./submit.html"
+       }
+       var time = setTimeout(() => {
+       document.querySelector('#targetDiv').className = 'move';
+          }, 1000);
+       let nali = document.getElementsByClassName("nali")
+       let body = document.getElementsByClassName("Body")[0]
+       let xinxin = document.getElementsByClassName("xinxin")
+       for(let i=0;i<nali.length;i++){
+		nali[i].addEventListener('click',function(){
+			nali[i].classList.add('active')
+            xinxin[i].innerHTML = '★'
+			for(let j=0;j<nali.length;j++){
+				if(i!=j){
+					nali[j].classList.remove('active')
+                    xinxin[j].innerHTML = '☆'
+				}
+			}
+            if(i === 0){
+                body.innerHTML = `    
+                <div class="box1">
+            <br><br>
+            <span class="zi">Company history:</span><br>
+    GYL is a combined Chinese and Malaysian tourism industry company, founded on June 2, 
+    2021, with headquarter in Kuala Lumpur, Malaysia and branch offices in Beijing, 
+    China. The business includes: booking tickets for scenic spots, booking hotels, and planning trips.<br><br>
+    Our company's trademark is:
+    <div> <img src="./conpany.png"></div><br><br>
+    <span class="zi">Malaysia background:</span><br>
+    Malaysia has a tropical rainforest climate and is located near the equator, so it is hot throughout the year. It is surrounded mostly by sea and contains many islands, some of which are Betruit Island, Langkawi, and Penang Island. Half of Malaysia is covered in trees, hence the climate. Some of these forests have become preserved and turned into parks for visitors. 
+    <br><br>
+    <span class="zi">China background:</span><br>
+    China has tropical monsoon climate zone, subtropical monsoon climate zone, temperate monsoon climate zone.
+    Chinese culture has a long history, extensive and profound, and is colorful. As the cultural supremative country of the East Asian cultural circle, Chinese culture occupies an important position in the world cultural system. Due to the differences in geographical location and natural conditions, Chinese culture and economy also have their own characteristics.
+    <br><br>
+    <br><br>
+    <span class="zi">Why choose GLY company?</span><br>
+    * You can better understand the tourism information and food information of China and Malaysia.<br>
+    * You can register your information on the spot.<br>
+    * You can find the exchange rate between Malaysia and China, or other countries.<br>
+    * You can get the answers to your questions on our website.<br>
+    * GLY is a company you can trust.<br>
+    <br><br>
+   </div>
+   <div class="box2">
+       <div class='boximg'>
+        <img src="conpany.png" alt="">
+        <img src="china.jpg" alt="">
+        <img src="malaysia.jpg" alt="">
+        <img src="wenhao.jpg" alt="">
+       </div>
+    </div>`
+            }
+            if(i === 1){
+                body.innerHTML = `
+                <div class="box1">
+            <br><br>
+            <span class="zi">Chinese place:</span><br><br>
+            <span class="zi">(伪满故宫博物院)：Puppet Manchuria Palace Museum：</span><br>
+This can be the residence of the emperor Puyi of the Qing Dynasty, which has shaped a lot of the historical background of the Qing Dynasty and clearly presented the living environment of the emperor in ancient times. There is also a brief introduction about the emperor in the courtyard and the emperor's preferences are also written on it. Here attracted many foreign friends and spread the Chinese history of the extensive and profound. If you want to come here, please take the No. 102 bus to the puppet palace stop and you can also bring some food and water for lunch.
+<br><br><br><br>
+<span class="zi">(净月潭国家森林公园)：Jingyuetan Home Forest Park：</span><br>
+It is one of the 5A scenic spots in China. It is a big place with many recreational buildings and many recreational activities such as golf, horse racing and skating in winter. The most enjoyable thing is that people will choose to have a picnic here in spring or summer. This is a good chance for lovers and friends or family who haven't seen each other for a long time. You can take the 420 bus to here and buy the ticket to enter the park directly. If you get tired of walking in the park, you can take the tour bus, which I think is a good choice
+<br><br><br><br>
+<span class="zi">(长影世纪城)：Changchun Movie Wonderland：</span><br>
+It's kind of a favorite place for kids to go to on Children's Day or on all kinds of holidays and the school or the parent-teacher association organizes students to come here. The film theme park here is mainly based on the movie theme park, referred to as East Hollywood is the essence of the United States Hollywood Universal Studios and Disney Amusement Park from the building. There's a lot of entertainment like the volcanic eruptions and the people that are involved in recreating the scene to create a scary atmosphere and it's very experiential. But I think the food and water here are very expensive and unpalatable, so if you want to come, you can bring some snacks or water. You can take No.120 to get off at Liuying Road, because it is a good choice for children
+<br><br><br><br>
+<span class="zi">Malaysia place：</span><br><br>
+    <span class="zi">Perhentian Island：</span><br>
+A group of small isalnds that used to be a trading port, it has now become part of a marine park in northeastearn Malaysia. To travel between these islands, you can ride either a ferry or motor boats. You can take a more scenic route by walking through the jungle paths, where you can see beautiful views of the water as you walk through the path. Popular activities include scuba diving, snorkeling, and kayaking, but you can get access to areas where turtles lay eggs.
+<br><br><br><br>
+<span class="zi">Gunung Mulu National Park, Penang：</span><br>
+It is recognised as a world heritage site, where massive caves are the center of focus when visiting. It houses thick rain forests, which makes traversing the terrain difficult. Here, the cave systems has the largest passage and is also the largest underground chamber in the world. One particular cave of interest is the Deer Cave which is 122 meters high. If you're visiting here, you can try climbing the Sarawak Chamber and Paku Waterfall. Another challenge would be the Pinnacles Summit Trek, which requires proper preparation.
+ <br><br><br><br>
+<span class="zi">Kek Lok Si Temple, George Town：</span><br>
+It is Malaysia's largest Buddhist temple which is located on a hill, at the bottom of Air Itam. This temple saw construction in 1890, where many buddha statues makes this place worthy of visit. In here, you can find gardens, ponds, prayer halls, and stalls selling religious souvenirs. Chinese New Year is celebrated here, where many beautiful lanterns help spruce up the atmosphere.
+        <br><br>
+        </div>
+           <div class="box2">
+               <div class='boximg'>
+                <img src="wm.jpg" alt="">
+                <img src="jy.jpg" alt="">
+                <img src="cy.jpg" alt="">
+                <img src="pi.jpg" alt="">
+                <img src="pnh.jpg" alt="">
+                <img src="klst.jpg" alt="">
+                <img src="klt.jpg" alt="">
+               </div>
+        </div>
+             `
+            }
+            if(i === 2){
+                body.innerHTML = ` <div class="body1">
+            <div class="bodytitle">Please give us your information !!!</div>
+            <form action="post">
+                <div class="box3">name :  <input type="text" placeholder="name" required></div>
+                <div class="box3">used name :  <input type="text" placeholder="used name"></div>
+                <div class="box3"> marital status :  <input type="radio" name="marital-status" value="married">married
+                 <input type="radio" name="marital-status" value="stuprum">stuprum
+                 <input type="radio" name="marital-status" value="engagement">engagement
+                 <input type="radio" name="marital-status" value="spinsterhood">spinsterhood
+             </div>
+                 <div class="box3">identification :<input type="text" placeholder="identification"></div>
+                 <div class="box3">present address :<input type="text" placeholder="present-address"></div>
+                 <div class="box3">nationality :<input type="text" placeholder="nationality"></div>
+                 <div class="box3">cell phone number :<input type="text" placeholder="cell-phone-number" ></div>
+                 <div class="box4">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="reset"></div>
+            </form>
+            <button id="sub" onclick="j()">sub</button>
+        </div>`
+            }
+            if(i === 3){
+                body.innerHTML = `
+                <div class="body1">
+            <div class="bodytitle">Flight Price</div>
+        <table>
+            <tbody><tr>
+                <th>Airlines Name</th>
+                <th>Description</th>
+                <th>Num of Ticket</th>
+                <th>Cost per Person</th>
+            </tr>
+    
+            <tr>
+                <td>China Southern Airlines</td>
+                <td class="text">46kg of checked luggage, meals, snacks, etc.</td>
+                <td>1</td>
+                <td>1350(CNY) / 843.75(RM)</td>
+            </tr>
+    
+            <tr>
+                <td>Xiamen Airlines</td>
+                <td class="text">46kg of checked luggage, meals, snacks, etc.</td>
+                <td>1</td>
+                <td>1350(CNY) / 843.75(RM)</td>
+            </tr>
+    
+            <tr>
+                <td>AirAsia</td>
+                <td class="text">20kg of checked luggage.</td>
+                <td>1</td>
+                <td>960(CNY) / 600(RM)</td>
+            </tr>
+
+            <tr>
+                <td>Malaysia Airlines</td>
+                <td class="text">60kg of checked luggage, meals, snacks, etc.</td>
+                <td>1</td>
+                <td>1680(CNY) / 1050(RM)</td>
+            </tr>
+        </tbody></table>
+        <br>
+        <br>
+        <div class="bodytitle">
+            Hotel Price
+        </div>
+        <table>
+            <tbody><tr>
+                <th>Hotel Name</th>
+                <th>Description</th>
+                <th>Nights</th>
+                <th>Cost per Person</th>
+            </tr>
+    
+            <tr>
+                <td>Shangri-La</td>
+                <td class="text">one breakfast, a trail map, a picnic snack </td>
+                <td>1</td>
+                <td>550(CNY) / 343.75(RM)</td>
+            </tr>
+    
+            <tr>
+                <td>Marriott Hotels</td>
+                <td class="text">one breakfasts, a trail map, a pass for daily yoga </td>
+                <td>1</td>
+                <td>650(CNY) / 406.25(RM)</td>
+            </tr>
+    
+            <tr>
+                <td>The RuMa Hotel and Residences</td>
+                <td class="text">one breakfasts, two bottles of mineral water, a trail map </td>
+                <td>1</td>
+                <td>480(CYN) / 300(RM)</td>
+            </tr>
+
+            <tr>
+                <td>Hotel 1000 Miles</td>
+                <td class="text">one breakfasts, two bottles of mineral water, a trail map </td>
+                <td>1</td>
+                <td>576(CYN) / 360(RM)</td>
+            </tr>
+        </tbody></table>
+        <br><br>
+        </div>`
+            }
+            if(i === 4){
+                body.innerHTML = `
+                <div class="box1">
+            <br><br>
+            <span class="zi">Chinese food:</span><br><br>
+                <span class="zi">(佛跳墙)：Buddha jumping over the wall：</span><br>
+Buddha jumping over the wall, also known as Fu Shou Quan, is a specialty dish in Fuzhou, Fujian Province. It belongs to Fujian cuisine. According to legend, this dish was developed by Zheng Chunfa, the owner of Juchunyuan Restaurant in Fuzhou during the Daoguang Period of the Qing Dynasty. According to Fei Xiaotong, it was a group of beggars who invented this dish.
+<br><br><br><br>
+<span class="zi">(北京烤鸭)：Roast duck：</span><br>
+Roast duck, a world-renowned Beijing dish, originated in the Northern and Southern Dynasties of China. Material for high quality meat duck Beijing duck, roasted fruit charcoal, ruddy color, meat fat but not greasy, crisp outside the tender. There are two schools of Peking duck, and the most famous roast duck restaurant in Beijing represents them.
+<br><br><br><br>
+<span class="zi">(宫保鸡丁)：Kung Pao Chicken：</span><br>
+Kung Pao Chicken is a famous traditional dish at home and abroad. Kung pao chicken as the main material, with peanuts, peppers and other auxiliary materials cooked from; Red but not spicy, spicy but not fierce, spicy and spicy, smooth crisp meat; Its mouth is fresh and spicy, and the freshness of the chicken can match the crispiness of the peanuts.
+<br><br>
+<span class="zi">Malaysia food：</span><br><br>
+<span class="zi">Char Kuey Teow: </span><br>
+A chinese-inspired rice noodle dish, the literal name of this dish is stir-fried flat rice noodles. It is prepared using light and dark sauce, bean sprouts, garlic, and prawns, though there are variations. This dish was once sold by people in the past so they can earn some income.
+<br><br><br><br>
+<span class="zi">Sweet and Sour Chicken: </span><br>
+A dish prepared by cutting the chicken into small pieces and dipped in batter, after which they are coated in sweet and sour sauce, which is made of ketchup, chili sauce, sugar, lemon juice, and salt. Vegetables are also cooked along with the chicken slices.
+<br><br><br><br>
+<span class="zi">Chicken Rice:</span><br>
+A dish of poached chicken and seasoned rice, it is often served with chili sauce and slices of cucumber at your local chinese shops and hawker stalls. Other versions of this dish include rice balls served with side dishes along with other sauces, as well as roasted and fried chicken.
+<br><br>
+        </div>
+           <div class="box2">
+            <div class='boximg'>
+             <img src="ftq.jpg" alt="">
+             <img src="bjky.jpg" alt="">
+             <img src="gbjd.jpg" alt="">
+             <img src="cgt.jpg" alt="">
+             <img src="sc.jpg" alt="">
+             <img src="cr.jpg" alt="">
+            </div>
+     </div>
+           `
+            }
+            if(i === 5){
+                body.innerHTML = `
+                <div class="box1">
+            <br><br>
+            <span class="zi">Chinese flight：</span><br><br>
+                <span class="zi">China Southern Airlines: </span><br>
+China Southern Airlines Group headquartered in Guangzhou, was formally established on February 1, 1991, with a blue vertical tail inlaid with red kapok as the company logo. It is an airline company with the most transport aircraft, the most developed route network and the largest annual passenger volume in China.
+<br>Website: <a href="https://www.csair.com/cn/">https://www.csair.com/cn/</a>
+<br><br>
+<span class="zi">Xiamen Airlines: </span><br>
+Xiamen Airlines have full series of Boeing 116 aircraft, average age 5.6 years, operating more than 220 domestic routes, international and regional routes nearly 30 of them, perform more than 3200 flights per week, built in xiamen, fuzhou, hangzhou as the core, all parts of the radiation in southeast Asia, connect Hong Kong, Macao and Taiwan regions, the route network, It has 8 branches in Fuzhou, Hangzhou, Tianjin, Shanghai, Beijing, Changsha, Chongqing and Quanzhou, as well as 48 domestic and overseas sales departments and offices. Its total assets have exceeded 35 billion yuan, and its net assets have reached 13 billion yuan. It is the only airline company in CAAC that has maintained profit for 28 consecutive years. 
+<br>Website: <a href="https://www.xiamenair.com/zh-cn/">https://www.xiamenair.com/zh-cn/</a>
+<br><br>
+<span class="zi">Malay flight：</span><br><br>
+    <span class="zi">AirAsia:</span><br>
+AirAsia is the largest known airline in Malaysia that was founded on 20 December, 1993. It operates in Malaysia, Indonesia, Thailand, the Philippines and India and has carried over millions of guests over many countries and places alike. It also has its own app where customers can engage in real-time conversations, join like-minded communities, play games and much more. If you're looking for a cheap flight providing the best travel experience, AirAsia is an excellent choice.
+<br>Website: <a href="https://www.airasia.com">https://www.airasia.com</a>
+<br><br>
+<span class="zi">Malaysia Airlines:</span><br>
+Formerly known as Malaysian Airline System, it stopped functioning in 1947 and began operations once more in September 2015 under a new name. It carries 60000 passengers daily on memorable journies inspired by Malaysia's rich diversity, capturing its traditions, cultures and cuisines. It is part of the Malaysia Aviation Group, where its objectives are to serve air travel needs towards its passengers. 
+<br>Website: <a href="https://www.malaysiaairlines.com/my/en.html">https://www.malaysiaairlines.com/my/en.html</a>
+<br><br>
+           </div>
+        </div>
+        <div class="box2">
+       <div class='boximg'>
+        <a href="https://www.csair.com/cn/"><img src="nha.jpg" alt=""></a>
+        <a href="https://www.xiamenair.com/zh-cn/"><img src="xma.jpg" alt=""></a>
+        <a href="https://www.airasia.com"><img src="aa.jpg" alt=""></a>
+        <a href="https://www.malaysiaairlines.com/my/en.html"><img src="ma.jpg" alt=""></a>
+       </div>
+    </div>
+           `
+            }
+
+            if(i === 6){
+                body.innerHTML = `
+                <div class="box1">
+            <br><br>
+            <span class="zi">Shangri-La:</span><br>
+Shangri-La is the brand of Hong Kong-listed Shangri-La (Asia) Ltd., a hotel group owned by Robert Kuok, the Malaysian Chinese businessman, who owns the Kwok Group. Shangri-La takes its name from James Hilton's novel Lost Horizon, a hideaway in the mountains of Tibet, China.
+Since the first Shangri-La Hotel opened in Singapore in 1971, Shangri-La Hotel has been stepping forward internationally.
+<br>Website: <a href="https://www.shangri-la.com/cn/">https://www.shangri-la.com/cn/</a>
+<br><br>
+<span class="zi">Marriott Hotels:</span><br>
+Marriott Hotels & Resorts, the flagship brand of Marriott International, has a history of more than 70 years. With more than 450 hotels, Marriott Hotels & Resorts is located in many travel hotspots around the world, providing unforgettable accommodations for guests everywhere.The cordial service and comprehensive facilities won applause from every passenger.
+<br>Website: <a href="https://www.marriott.com.cn">https://www.marriott.com.cn</a>
+<br><br>
+<span class="zi">The RuMa Hotel and Residences:</span><br>
+A luxurious hotel where the distance between it and the Twin Towers is 700 meters. It offers breathtaking views across the city's famed skyline and a swimming pool. It also ranges from light refreshments to a dining restaurant. The rooms are equipped with appliances suitable for mundane tasks like a tv, a desk, and even a coffee machine. It also has a fitness centre.
+<br>Website: <a href="https://theruma.com/en">https://theruma.com/en</a>
+<br><br>
+<span class="zi">Hotel 1000 Miles:</span><br>
+Hotel 1000 Miles is located in KLCC, where you can see Petaling Street (Chinatown), Masjid Jamek, Merdeka Square and Central Market, all of which you can arrive only at a short distance by foot. All rooms have a tv and there is a 24-hour front desk should you have any enquiries. It also has free luggage storage.
+<br>Website: <a href="https://1000mileskl.com/">https://1000mileskl.com/</a>
+            <br><br>
+           </div>
+           `
+            }
+
+            if(i === 7){
+                body.innerHTML = `
+                <div class="box1">
+            <br><br>
+            <span class="zi">Q:will I get a refund if I cancel my booking?</span><br>
+            A:customer will get a full return before the day of the flight ticket.
+            <br><br>
+            <span class="zi">Q:how many days do I have left if I want to ask for a refund?</span><br>
+            Answer for Malaysia:recommend you to contact us regarding the cancellation five days before the date of the flight.<br>
+            Answer for China:recommend you to contact us regarding the cancellation five working days before the date of the flight.
+            <br><br>
+            <span class="zi">Q:Will there be a pick-up and drop-off?</span><br>
+            A:This depends on the plan of the travel agency.
+            <br><br>
+            <span class="zi">Q:Emergency call:</span><br>
+            Answer for Malaysia:999 is for police and Emergency,994 is for fire<br>
+            Answer for China:110 is for police,120 is for Emergency,119 is for fire
+            <br><br>
+           </div>
+           <div class="box2">
+       <div class='boximg'>
+        <img src="wenhao.jpg" alt="">
+       </div>
+    </div>
+           `
+            }
+            if(i === 8){
+                body.innerHTML = `
+                <div class="box1">
+            <br><br>
+            <span class="zi">Malaysia Weather:</span><br>
+Since Malaysia has a tropical rainforest climate, its weather is known to be quite humid that ranges from 20 to 30 degrees. Depending on the location, the temperatures may vary. The south-west experiences its monsoon season from May to September while November to March is the wettest in the north-east. If you plan on going to the beaches, January and February would be recommended in the west coast, April in Sabah, June and July on the east coast and in Sarawak. Rainfall is especially apparent from March to April and from September to November. After the monsoon season, the climate is very pleasant and the weather is characterised by warm sunny days and slightly cooler nights, making Malaysia a pleasant place to visit at almost any time of year.
+<br><br>
+<span class="zi">China Weather(north):</span><br>
+The northern region is mainly temperate continental climate and temperate monsoon climate. The temperature in winter is lower than 0℃, and the temperature in summer is higher than 20℃, with distinct temperature changes in the four seasons. The coldest month occurs in January and the hottest in July. Precipitation is low throughout the year, and the seasonal distribution is uneven, and the precipitation is concentrated in summer
+<br><br>
+<span class="zi">China Weather(South):</span><br>
+The northern region is mainly subtropical monsoon climate.The temperature in winter is generally above 0℃, and the temperature in summer is higher than 30℃. In summer, it is generally high temperature and rainy. In winter, it is mild and dry.The four seasons are distinct throughout the year, and the weather is changeable. With the increase of latitude, the temperature in winter and summer increases correspondingly, while the precipitation gradually decreases.
+            <br><br>
+           </div>
+        </div>
+           `
+            }
+            if(i === 9){
+                body.innerHTML = `
+                <div class="body1">
+            <div class="bodytitle2">2021-06-29 </div>
+            <table class="tab1">
+                <tbody><tr>
+                    <td>Country</td>
+                                    <td>CNY(RMB)</td>
+                                    <td>RM</td>
+                </tr>
+        
+                <tr>
+                     <td></td>
+                                    <td>1</td>
+                                    <td>1.6</td>
+                </tr>
+        
+                <tr>
+                     <td>America 100 (USD)</td>
+                                    <td>646.36 </td>
+                                    <td>415</td>
+                </tr>
+        
+                <tr>
+                     <td>England 100 (GBP)</td>
+                                    <td>894.2446</td>
+                                    <td>574.0766</td>
+                </tr>
+            </tbody></table>
+         <div class="bodytitle1">The exchange rate is only available on June 29th, which cannot be used for correct remittance. Please refer to the exchange rate obtained by British Airways on that day.</div>
+        </div>  
+           `
+            }
+		})
+	}
+    </script>
+</body>
+</html>
